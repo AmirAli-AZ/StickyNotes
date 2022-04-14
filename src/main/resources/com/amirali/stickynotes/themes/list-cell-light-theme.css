@@ -1,0 +1,11 @@
+#rootNode {
+    -fx-background-radius : 10px;
+    -fx-border-radius : 10px;
+    -fx-border-color : darkgray;
+}
+
+#content {
+    -fx-background-radius : 5px 5px 10px 10px;
+    -fx-border-radius : 5px 5px 10px 10px;
+    -fx-background-color : white;
+}

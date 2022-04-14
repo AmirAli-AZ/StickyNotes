@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane id="rootNode" fx:id="root" stylesheets="@themes/list-cell-light-theme.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox id="content" alignment="TOP_RIGHT" spacing="5.0">
+         <StackPane.margin>
+            <Insets top="15.0" />
+         </StackPane.margin>
+         <children>
+            <Label fx:id="date" text="Date">
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="content" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Label" wrapText="true" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

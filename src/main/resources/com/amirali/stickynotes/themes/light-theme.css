@@ -1,0 +1,93 @@
+#rootNode {
+    -fx-background-color : white;
+}
+
+#note-window {
+    -fx-background-color : white;
+    -fx-background-insets : 5;
+    -fx-padding : 5;
+    -fx-effect : dropshadow(three-pass-box , black , 10 , 0 , 0 , 0);
+}
+
+#whiteCloseBtn {
+    -fx-background-image : url(../icons/round_close_white_24dp.png);
+    -fx-background-size : 30px 30px;
+    -fx-background-position : center;
+    -fx-background-repeat : no-repeat;
+    -fx-background-color : transparent;
+    -fx-background-radius : 0;
+}
+
+#whiteAddBtn {
+    -fx-background-image : url(../icons/round_add_white_24dp.png);
+    -fx-background-size : 30px 30px;
+    -fx-background-position : center;
+    -fx-background-repeat : no-repeat;
+    -fx-background-color : transparent;
+    -fx-background-radius : 0;
+}
+
+#whiteMoreBtn {
+    -fx-background-image : url(../icons/round_more_vert_white_24dp.png);
+    -fx-background-size : 30px 30px;
+    -fx-background-position : center;
+    -fx-background-repeat : no-repeat;
+    -fx-background-color : transparent;
+    -fx-background-radius : 0;
+}
+
+#whiteMoreBtn > .arrow-button > .arrow {
+    -fx-background-color : transparent;
+}
+
+.text-area {
+    -fx-font-size : 14px;
+    -fx-focus-color : transparent;
+    -fx-faint-focus-color : transparent;
+}
+
+.menu-item .label {
+    -fx-text-fill : black;
+}
+
+.menu-item:focused {
+    -fx-background-color : #c4c4c4;
+}
+
+#search-text-field {
+    -fx-focus-color : transparent;
+    -fx-faint-focus-color : transparent;
+    -fx-background-radius : 360px;
+    -fx-border-radius : 360px;
+    -fx-border-color : darkgray;
+}
+
+.list-view {
+    -fx-focus-color : transparent;
+    -fx-faint-focus-color : transparent;
+    -fx-background-insets : 0;
+}
+
+.list-cell {
+    -fx-background-color : white;
+}
+
+.list-view:focused .list-cell:filled:focused:selected .label {
+    -fx-text-fill : black;
+}
+
+#createBtn {
+    -fx-background-color : #2196F3;
+    -fx-background-radius : 5px;
+    -fx-text-fill : white;
+    -fx-background-insets : 0 0 -1 0, 0 , 1 , 2;
+    -fx-cursor : hand;
+}
+
+#createBtn:hover {
+    -fx-background-color : #1B76BF;
+}
+
+.context-menu {
+    -fx-background-radius : 5px;
+}
