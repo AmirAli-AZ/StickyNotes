@@ -95,11 +95,19 @@ object DBManager {
     }
 
     private fun getAppDataPath():String {
-        val file = File(System.getenv("APPDATA").plus(File.separator).plus("com.amirali.stickynotes"))
+        val workingDir = when(OSUtils.get()) {
+            OSUtils.OS.WINDOWS ->
+                System.getenv("APPDATA").plus(File.separator).plus("com.amirali.stickynotes")
+            OSUtils.OS.LINUX ->
+                System.getProperty("user.home").plus(File.separator).plus("com.amirali.stickynotes")
+            else ->
+                "com.amirali.stickynotes"
+        }
+
+        val file = File(workingDir)
         if (!file.exists())
             Files.createDirectories(Paths.get(file.path))
 
-        return file.absolutePath
+        return workingDir
     }
-
 }
